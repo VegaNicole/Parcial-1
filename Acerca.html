@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos CSS-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/acerca.css">
+
+    <!-- LIBRERIAS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/9d0fb474ff.js" crossorigin="anonymous"></script>
+    <title>Acerca de</title>
+    
+</head>
+<body>
+    <!-- HEADER / MENU / BREADCRUMB-->
+    <header class = "header">
+        <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
+        <ul class="breadcrumb">
+            <a href="Inicio.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Acerca.html">Acerca De</a></li>
+            <li><a href="Contacteme.html">Contácteme</a></li>
+            <li>Nicole</li>
+        </ul>
+
+        <!-- MENU -->
+        <div class="contenedor-menu" id="contenedor-menu">
+            <p class="btn-abrir-menu" id="btn-abrir-menu">
+                <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
+            </p>
+            <nav class="elementos-navegacion">
+                    <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Acerca.html">Acerca de mí</a></li>
+                    <li><a href="Contacteme.html">Contáctame</a></li>
+                    </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!-- BREVE DESCRIPCIÓN DE MÍ-->
+    <section>
+        <div class ="container grid-1">
+            <div class="container-cajas"> 
+                <h5> ¿Quién soy?</h5>
+            </div>
+            <div class="container-cajas"> 
+                <p>¡Hola mi nombre es Nicole! Tengo 20 años y mido 1.60.
+                    Actualmente vivo en Quebradilla de Cartago 
+                    junto con mi familia
+                </p>
+                <p>Pasatiempos:
+                </p>
+
+                <p class="fa fa-leanpub"> Aprender lo que sea que me llame la atención</p>
+                <p class="fa fa-eye"> Ver series, peliculas, documentales</p>
+                <p class="fa fa-user-o"> Armar rompecabezas, cubos rubiks</p> <br>
+                <p class="fa fa-map"> Visitar nuevos lugares</p>
+        
+            </div>
+
+        </div>
+
+        <div class ="container grid-2">
+            <div class="container-cajas"> 
+                <p>2017 - 2019 Informática en Redes. Colegio Técnico
+                </p>
+                <p>2020 - Actual Ingeniería en Inormática. Universidad Florencio del Castillo
+                </p>
+                <p>Cursos: <br>
+                   <li> It Essentials</li>
+                   <li> Design Thinking</li>
+                   <li> Excel Avanzado</li>
+                </p>
+            </div>
+            <div class="container-cajas"> 
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                <h5> Educación</h5>
+            </div>
+
+        </div>
+
+        <div class ="container grid-3">
+            <div class="container-cajas"> 
+                <h5> Conocimientos</h5>
+            </div>
+            <div class="container-cajas"> 
+                <li> <img src="images/mysql.png"></li>
+                <li> <img src="images/office.png"></li>
+                <li> <img src="images/php.png"></li>
+            </div>
+        </div>
+
+        <div class ="container grid-4">
+            <div class="container-cajas">
+                <p>2017 Taller Software / Hardware. SYKES</p> 
+                <p>2019 Práctica Profesional. Asociación Esperanza Viva</p> 
+                <p>2021 Desarrollo Web. Científicas de Datos Costa Rica</p> 
+            </div>
+            <div class="container-cajas"> 
+                <h5> Experiencia</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h4> Portafolio </h4>
+        <p>
+            UCA - Universidad Florencio del Castillo
+        </p>
+        <p>
+            Ingeniería en Informática
+        </p>
+        <p>
+            Interfaces Gráficas
+        </p>
+        <p>
+            Parcial I - 2021
+        </p>
+    </footer>
+
+    <script>
+        const menu = document.getElementById('btn-abrir-menu');
+        menu.addEventListener('click', () => {
+             document.getElementById('contenedor-menu').classList.toggle('active');
+        });
+   </script>
+    
+</body>
+</html>

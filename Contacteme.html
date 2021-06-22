@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Estilos CSS-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contactame.css">
+
+    <!-- LIBRERIAS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/9d0fb474ff.js" crossorigin="anonymous"></script>
+    <title>Contacteme</title>
+</head>
+<body>
+    <!-- HEADER / MENU / BREADCRUMB-->
+    <header class = "header">
+        <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
+        <ul class="breadcrumb">
+            <a href="Inicio.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Acerca.html">Acerca De</a></li>
+            <li><a href="Contacteme.html">Contácteme</a></li>
+            <li>Nicole</li>
+        </ul>
+        <!-- MENU -->
+        <div class="contenedor-menu" id="contenedor-menu">
+            <p class="btn-abrir-menu" id="btn-abrir-menu">
+                <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
+            </p>
+            <nav class="elementos-navegacion">
+                    <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Acerca.html">Acerca de mí</a></li>
+                    <li><a href="Contacteme.html">Contáctame</a></li>
+                    </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!-- Contacto -->
+    <section>
+        <div class = "padre">
+            <h2 class="title">Contáctame</h2>
+            <div>
+                <label>Asunto:</label>
+                <input type="text" name = "ASUNTO" placeholder = "Asunto">
+            </div>
+            <div>
+                <label>Correo:</label>
+                <input type="text" name = "CORREO" placeholder = "Correo Electrónico">
+            </div>
+            <div>
+                <label>Descripción:</label>
+                <textarea name="DESCRIPCION" id="DESCRIPCIÓN" cols="40" rows="5" placeholder="Descripción"></textarea>
+            </div>
+            <input type="submit" name = "Contactar" placeholder = "Contactar" value = "Contactar" class = "boton">
+            
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h4> Portafolio </h4>
+        <p>
+            UCA - Universidad Florencio del Castillo
+        </p>
+        <p>
+            Ingeniería en Informática
+        </p>
+        <p>
+            Interfaces Gráficas
+        </p>
+        <p>
+            Parcial I - 2021
+        </p>
+    </footer>
+
+    <script>
+        const menu = document.getElementById('btn-abrir-menu');
+        menu.addEventListener('click', () => {
+             document.getElementById('contenedor-menu').classList.toggle('active');
+        });
+   </script>
+    
+</body>
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/*HEADER*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-image: linear-gradient(rgb(0, 190, 178), rgb(6, 82, 77));   
+   
+}
+
+.header{
+    position: fixed;
+}
+
+header .logo{
+    position: relative;
+    height: 60px;
+    mix-blend-mode: normal;
+}
+
+/* Breadcrumbs */
+
+ul.breadcrumb {
+    margin-left: auto;
+    padding: 15px;
+    list-style: none;
+    width: 550px;
+    text-align: center;
+    border-radius: 15px;
+}
+  
+ul.breadcrumb li {
+    display: inline;
+    font-size: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+  
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+  
+ul.breadcrumb li a:hover {
+    color: #000000;
+    text-decoration: underline;
+    background-color: #008d76;
+    color: white;
+}
+
+/* Menu */
+
+
+.contenedor-menu {
+    background: #396362;
+    color: #fff;
+    position: fixed;
+    width: 600px;
+    height: 380px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    clip-path: circle(80px at 5% 5%);
+    transition: .7s ease all;
+}
+
+.contenedor-menu.active {
+    clip-path: polygon(0% 0%, 75% 0%, 75% 53%, 75% 100%, 0% 100%)
+}
+
+.btn-abrir-menu {
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+@keyframes rotar {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(-15deg);}
+    60% {transform: rotate(15deg);}
+    80% {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.elementos-navegacion {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.elementos-navegacion li {
+    list-style: none;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.contenedor-menu.active li {
+    animation: desplazamiento 1s ease;
+}
+
+@keyframes desplazamiento {
+    from {transform: translateY(1000px);}
+    to {transform: translateY(0);}
+}
+
+.elementos-navegacion li a {
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    transition: .2s ease all;
+}
+
+.elementos-navegacion li a:hover {
+    background: #000;
+}
